@@ -13,14 +13,19 @@ public class Tugas1 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-Scanner read = new Scanner(System.in);
-int minutes, seconds;
-System.out.print("Enter an Integer for seconds: ");
-seconds = read.nextInt();
-minutes = seconds/60;
-
-System.out.println(seconds + " seconds is " + minutes + "minutes and " + seconds % 60 + " seconds");
+    
+ public static void main(String[] args)
+    {
+        Scanner read = new Scanner(System.in);
+        System.out.print("Enter an integer for seconds: ");
+int seconds = read.nextInt(); 
+        int secs = seconds % 60;
+        int hrs = seconds / 60;
+        int mins = hrs % 60;
+        hrs = hrs / 60;
+        System.out.print( seconds + " seconds is " + mins + " minutes and " + secs + " seconds");
+		System.out.print("\n");
+    }    
+ }
         // TODO code application logic here
-    }
-} 
+     
